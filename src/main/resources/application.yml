@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/gestion-commande
+    driver-class-name: org.postgresql.Driver
