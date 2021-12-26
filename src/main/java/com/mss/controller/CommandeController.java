@@ -36,4 +36,9 @@ public class CommandeController {
 
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable String id){
+        commandeService.delete(id);
+    }
+
 }

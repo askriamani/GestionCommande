@@ -10,4 +10,6 @@ public interface CommandeService {
     CommandeDTO save(CommandeDTO commandeDTO);
 
     CommandeDTO updateCommande(CommandeDTO commandeDTO, String id);
+
+    void delete(String id);
 }

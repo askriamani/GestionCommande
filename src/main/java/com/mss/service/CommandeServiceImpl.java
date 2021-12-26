@@ -44,5 +44,11 @@ private CommandeDAO commandeDAO;
         return null;
     }
 
+    @Override
+    public void delete(String id) {
+        Optional<Commande> optional = commandeDAO.findById(id);
+        optional.ifPresent(commande -> commandeDAO.delete(commande));
+    }
+
 
 }
